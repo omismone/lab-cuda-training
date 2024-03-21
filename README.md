@@ -1,1 +1,1 @@
-# CUDA TRAINING
+# CUDA TRAINING in lab
