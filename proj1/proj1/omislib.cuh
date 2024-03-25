@@ -6,4 +6,5 @@ struct arr {
     int size;    // Number of its elements.
 };
 
-int addWithCuda(struct arr *c, struct arr *a, struct arr *b);
+void addWithCuda(struct arr *c, struct arr *a, struct arr *b);
+int dotProdWithCuda(struct arr* a, struct arr* b);

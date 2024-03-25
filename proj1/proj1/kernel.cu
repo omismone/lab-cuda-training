@@ -15,14 +15,14 @@
 */
 void getRandomArr(struct arr *v) {
     for (int i = 0; i < v->size; i++) {
-        v->val[i] = rand() % v->size;
+        v->val[i] = rand() % 10;
     }
 }
 
 int main()
 {
     //init
-    const int SIZE = 10;
+    const int SIZE = 3;
     struct arr a;
     struct arr b;
     a.size = SIZE;
@@ -42,7 +42,12 @@ int main()
     // Add arrtors in parallel.
     addWithCuda(&c, &a, &b);
 
+    // Dot product "in parallel"
+    int dot = dotProdWithCuda(&a, &b);
+
     //out
+
+    //add
     printf("{");
     for (int i = 0; i < a.size; i++) {
         printf("%d", a.val[i]);
@@ -59,6 +64,9 @@ int main()
         if (i != c.size - 1) printf(", ");
     }
     printf("}\n");
+
+    //dot prod
+    printf("dot product: %d\n", dot);
 
     // cudaDeviceReset must be called before exiting in order for profiling and
     // tracing tools such as Nsight and Visual Profiler to show complete traces.

@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\mclab\\Desktop\\simone\\lab-cuda-training\\proj1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CEB18F9B-4C99-4038-AD6D-2AC3491CE7BA}|proj1\\proj1.vcxproj|C:\\Users\\mclab\\Desktop\\simone\\lab-cuda-training\\proj1\\proj1\\addWithCuda.cu||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{CEB18F9B-4C99-4038-AD6D-2AC3491CE7BA}|proj1\\proj1.vcxproj|solutionrelative:proj1\\addWithCuda.cu||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CEB18F9B-4C99-4038-AD6D-2AC3491CE7BA}|proj1\\proj1.vcxproj|C:\\Users\\mclab\\Desktop\\simone\\lab-cuda-training\\proj1\\proj1\\kernel.cu||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{CEB18F9B-4C99-4038-AD6D-2AC3491CE7BA}|proj1\\proj1.vcxproj|solutionrelative:proj1\\kernel.cu||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEB18F9B-4C99-4038-AD6D-2AC3491CE7BA}|proj1\\proj1.vcxproj|C:\\Users\\mclab\\Desktop\\simone\\lab-cuda-training\\proj1\\proj1\\dotProdWithCuda.cu||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{CEB18F9B-4C99-4038-AD6D-2AC3491CE7BA}|proj1\\proj1.vcxproj|solutionrelative:proj1\\dotProdWithCuda.cu||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEB18F9B-4C99-4038-AD6D-2AC3491CE7BA}|proj1\\proj1.vcxproj|C:\\Users\\mclab\\Desktop\\simone\\lab-cuda-training\\proj1\\proj1\\addWithCuda.cu||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{CEB18F9B-4C99-4038-AD6D-2AC3491CE7BA}|proj1\\proj1.vcxproj|solutionrelative:proj1\\addWithCuda.cu||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CEB18F9B-4C99-4038-AD6D-2AC3491CE7BA}|proj1\\proj1.vcxproj|C:\\Users\\mclab\\Desktop\\simone\\lab-cuda-training\\proj1\\proj1\\omislib.cuh||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -22,44 +26,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "dotProdWithCuda.cu",
+              "DocumentMoniker": "C:\\Users\\mclab\\Desktop\\simone\\lab-cuda-training\\proj1\\proj1\\dotProdWithCuda.cu",
+              "RelativeDocumentMoniker": "proj1\\dotProdWithCuda.cu",
+              "ToolTip": "C:\\Users\\mclab\\Desktop\\simone\\lab-cuda-training\\proj1\\proj1\\dotProdWithCuda.cu",
+              "RelativeToolTip": "proj1\\dotProdWithCuda.cu",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAD0AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-03-25T13:50:21.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "addWithCuda.cu",
               "DocumentMoniker": "C:\\Users\\mclab\\Desktop\\simone\\lab-cuda-training\\proj1\\proj1\\addWithCuda.cu",
               "RelativeDocumentMoniker": "proj1\\addWithCuda.cu",
               "ToolTip": "C:\\Users\\mclab\\Desktop\\simone\\lab-cuda-training\\proj1\\proj1\\addWithCuda.cu",
               "RelativeToolTip": "proj1\\addWithCuda.cu",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAABNAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAADsAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-03-25T08:54:43.768Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "omislib.cuh",
               "DocumentMoniker": "C:\\Users\\mclab\\Desktop\\simone\\lab-cuda-training\\proj1\\proj1\\omislib.cuh",
               "RelativeDocumentMoniker": "proj1\\omislib.cuh",
               "ToolTip": "C:\\Users\\mclab\\Desktop\\simone\\lab-cuda-training\\proj1\\proj1\\omislib.cuh",
               "RelativeToolTip": "proj1\\omislib.cuh",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-03-25T08:51:10.017Z"
+              "WhenOpened": "2024-03-25T08:51:10.017Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "kernel.cu",
               "DocumentMoniker": "C:\\Users\\mclab\\Desktop\\simone\\lab-cuda-training\\proj1\\proj1\\kernel.cu",
               "RelativeDocumentMoniker": "proj1\\kernel.cu",
               "ToolTip": "C:\\Users\\mclab\\Desktop\\simone\\lab-cuda-training\\proj1\\proj1\\kernel.cu",
               "RelativeToolTip": "proj1\\kernel.cu",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAUwCUAAAAqAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAqwDIAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-03-22T17:12:47.21Z"
+              "WhenOpened": "2024-03-22T17:12:47.21Z",
+              "EditorCaption": ""
             }
           ]
         }

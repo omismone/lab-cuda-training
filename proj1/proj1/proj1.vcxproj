@@ -78,6 +78,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <CudaCompile Include="addWithCuda.cu" />
+    <CudaCompile Include="dotProdWithCuda.cu" />
     <CudaCompile Include="kernel.cu" />
   </ItemGroup>
   <ItemGroup>

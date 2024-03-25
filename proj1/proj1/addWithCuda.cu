@@ -2,19 +2,23 @@
 #include "device_launch_parameters.h"
 
 #include <math.h>
+#include<stdio.h>
 
 #include "omislib.cuh"
 
+#define THREADPERBLOCK 5
 
 
-__global__ void addKernel(int* c, int* a, int* b)
+
+__global__ void addKernel(int* c, int* a, int* b, unsigned int size)
 {
     int i = blockIdx.x * blockDim.x + threadIdx.x;
-    c[i] = a[i] + b[i];
+    if(i < size)    
+        c[i] = a[i] + b[i];
 }
 
 // Helper function for using CUDA to add arrtors in parallel.
-int addWithCuda(struct arr* c, struct arr* a, struct arr* b)
+void addWithCuda(struct arr* c, struct arr* a, struct arr* b)
 {
     int* dev_a = 0;
     int* dev_b = 0;
@@ -35,12 +39,14 @@ int addWithCuda(struct arr* c, struct arr* a, struct arr* b)
 
     cudaMemcpy(dev_b, b->val, b->size * sizeof(int), cudaMemcpyHostToDevice);
 
-    const unsigned int THREADPERBLOCK = 5;                                              // what if this value exceed max thread per block value?????????????
     dim3 dimBlock(THREADPERBLOCK, 1, 1);
-    dim3 dimGrid(ceil(c->size / THREADPERBLOCK), 1, 1);
+    int num = c->size / THREADPERBLOCK;
+    if (c->size % THREADPERBLOCK != 0)
+        num += 1;
+    dim3 dimGrid(num, 1, 1);
 
     // Launch a kernel on the GPU with one thread for each element.
-    addKernel <<<dimGrid, dimBlock >> > (dev_c, dev_a, dev_b);
+    addKernel <<<dimGrid, dimBlock >> > (dev_c, dev_a, dev_b, c->size);
 
     // cudaDeviceSynchronize waits for the kernel to finish, and returns
     // any errors encountered during the launch.
@@ -52,6 +58,4 @@ int addWithCuda(struct arr* c, struct arr* a, struct arr* b)
     cudaFree(dev_c);
     cudaFree(dev_a);
     cudaFree(dev_b);
-
-    return 0;
 }
