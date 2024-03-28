@@ -39,7 +39,7 @@ void printMatrix(struct mat* m) {
 int main()
 {
     //init
-    const int SIZE = 3;
+    const int SIZE = 2;
     struct mat a;
     struct mat b;
     a.size[0] = SIZE;
